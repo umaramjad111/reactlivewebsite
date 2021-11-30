@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import img1 from './images/bus.jpg';
 
 export default function About() {
     return (
@@ -7,8 +8,9 @@ export default function About() {
                 <div className="container mb-3">
                     <div className="row ">
                         <div className="col-md-6 mt-3 d-flex justify-content-center">
-                            <img src="/images/business.jpg" alt="busness" 
-                            className="w-75 mt-5 rounded-pill imgzoom" />
+                           
+                            <img src={img1} alt="business" className="rounded-pill imgzoom h-75 w-75 my-auto" />
+                          
                         </div>
                         <div className="col-md-6 mt-3">
                             <h3 className="fs-2 fw-bolder mt-5">About Us</h3>

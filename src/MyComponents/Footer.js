@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css';
+import img1 from './images/bus.jpg';
 
 export default function Footer() {
     return (
@@ -18,8 +19,8 @@ export default function Footer() {
                           </div>
 
                           <div className="col-md-4 d-flex justify-content-center">
-                            <img className="rounded-pill" src="/images/business.jpg" width="400px"  alt="business" />
-                          </div>
+                          <img src={img1} alt="business" className="rounded-pill imgzoom h-75 w-75 my-auto" />
+                            </div>
                 
                          <div className="col-md-4 mt-4">
                               <h3 className=" display-6 text-white text-center">
@@ -35,17 +36,7 @@ export default function Footer() {
                           </div>
                 
                   </div>
-                  {/* <div className="row">
-                      <div className="col">
-                      <i class="fab fa-instagram text-white fa-2x"></i>
-                      </div>
-                      <div className="col">
-                      <i class="fab fa-instagram text-white fa-2x"></i>
-                      </div>
-                      <div className="col">
-                      <i class="fab fa-instagram text-white fa-2x"></i>
-                      </div>
-                  </div> */}
+                 
 
                    <div className="container pb-3">
                    <div className="row  socialmedias">

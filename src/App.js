@@ -15,6 +15,7 @@ import Footer from './MyComponents/Footer';
 import Login from './MyComponents/Login';
 import Register from './MyComponents/Register';
 import Dashboard from './MyComponents/Dashboard';
+import Reactlivewebsite from './MyComponents/Reactlivewebsite';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
         <Router>
       <Navbar/>
       <Switch>
+      <Route exact path="/reactlivewebsite">
+        <Home/>
+        </Route>
         <Route exact path="/">
         <Home/>
         </Route>
@@ -45,6 +49,7 @@ function App() {
         <Dashboard/>
         </Route>
       </Switch>
+      
       <Footer/>
       </Router>
         </>

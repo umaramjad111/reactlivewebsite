@@ -1,4 +1,5 @@
 import React from 'react'
+import img1 from './images/contact.jpg';
 
 export default function Contact() {
     return (
@@ -13,8 +14,8 @@ export default function Contact() {
                     </div>
                     <div className="row">
                         <div className="col-md-6 d-flex justify-content-center">
-                            <img src="/images/contact.jpg" alt="contact" 
-                             className="w-75 mt-5 rounded-pill imgzoom"/>
+                        <img src={img1} alt="business" className="rounded-pill imgzoom h-75 w-75 my-auto" />
+                            
                         </div>
                         <div className="col-md-6">
                             <form action="">
