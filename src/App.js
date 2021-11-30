@@ -15,18 +15,17 @@ import Footer from './MyComponents/Footer';
 import Login from './MyComponents/Login';
 import Register from './MyComponents/Register';
 import Dashboard from './MyComponents/Dashboard';
-import Reactlivewebsite from './MyComponents/Reactlivewebsite';
+
 
 
 function App() {
   return (
         <>
         <Router>
+          {/* forchannellink */}
       <Navbar/>
-      <Switch>
-      <Route exact path="/reactlivewebsite">
-        <Home/>
-        </Route>
+      <Home/> 
+      <Switch>   
         <Route exact path="/">
         <Home/>
         </Route>
