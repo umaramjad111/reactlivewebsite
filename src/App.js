@@ -22,9 +22,9 @@ function App() {
   return (
         <>
         <Router>
-          {/* forchannellink */}
+         
       <Navbar/>
-      <Home/> 
+      
       <Switch>   
         <Route exact path="/">
         <Home/>
@@ -48,7 +48,7 @@ function App() {
         <Dashboard/>
         </Route>
       </Switch>
-      
+      <Home/> 
       <Footer/>
       </Router>
         </>
