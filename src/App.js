@@ -7,7 +7,8 @@ import {
   HashRouter,
   Switch,
   Route,
-  Link
+  Link,
+  BrowserRouter,
 } from "react-router-dom";
 import About from './MyComponents/About';
 import Services from './MyComponents/Services';
@@ -22,10 +23,10 @@ import Dashboard from './MyComponents/Dashboard';
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter>
         <Navbar />
         <Switch>
-         <Route path="/reactlivewebsite#" component={App} exact /> 
+         <Route exact path="/reactlivewebsite" component={App}/> 
           <Route exact path="/">
             <Home />
           </Route>
@@ -48,9 +49,8 @@ function App() {
             <Dashboard />
           </Route>
         </Switch>
-         <Home/>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </>
 
   );
