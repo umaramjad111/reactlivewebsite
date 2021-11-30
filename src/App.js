@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './MyComponents/Navbar';
 import Home from './MyComponents/Home';
+import { HashRouter, Route } from "react-router-dom";
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,39 +21,36 @@ import Dashboard from './MyComponents/Dashboard';
 
 function App() {
   return (
-        <>
-        <Router>
+    <>
+      <HashRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/services">
+            <Services />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
+          </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/register">
+            <Register />
+          </Route>
+          <Route exact path="/dashboard">
+            <Dashboard />
+          </Route>
+        </Switch>
          
-      <Navbar/>
-      
-      <Switch>   
-        <Route exact path="/">
-        <Home/>
-        </Route>
-        <Route exact path="/about">
-        <About/>
-        </Route>
-        <Route exact path="/services">
-         <Services/>
-        </Route>
-        <Route exact path="/contact">
-        <Contact/>
-        </Route>
-        <Route exact path="/login">
-        <Login/>
-        </Route>
-        <Route exact path="/register">
-        <Register/>
-        </Route>
-        <Route exact path="/dashboard">
-        <Dashboard/>
-        </Route>
-      </Switch>
-       <Home/> 
-      <Footer/>
-      
-      </Router>
-        </>
+        <Footer />
+      </HashRouter>
+    </>
 
   );
 }
