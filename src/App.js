@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './MyComponents/Navbar';
 import Home from './MyComponents/Home';
-import { HashRouter, Route } from "react-router-dom";
+
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route,
   Link
