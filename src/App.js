@@ -4,7 +4,7 @@ import Navbar from './MyComponents/Navbar';
 import Home from './MyComponents/Home';
 
 import {
-  HashRouter,
+  BrowserRouter as Route,
   Switch,
   Route,
   Link
@@ -22,7 +22,7 @@ import Dashboard from './MyComponents/Dashboard';
 function App() {
   return (
     <>
-      <HashRouter>
+      <BrowserRouter baseUrl="/reactlivewebsite">
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -49,7 +49,7 @@ function App() {
         </Switch>
          
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </>
 
   );
