@@ -25,7 +25,7 @@ function App() {
       <HashRouter>
         <Navbar />
         <Switch>
-         <Route path="/reactlivewebsite" component={App} exact /> 
+         <Route path="/reactlivewebsite#" component={App} exact /> 
           <Route exact path="/">
             <Home />
           </Route>
