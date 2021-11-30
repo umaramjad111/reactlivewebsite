@@ -47,6 +47,7 @@ function App() {
             <Dashboard />
           </Route>
         </Switch>
+        <Home/>
         <Footer />
       </Router>
     </>
