@@ -16,13 +16,24 @@ import Footer from './MyComponents/Footer';
 import Login from './MyComponents/Login';
 import Register from './MyComponents/Register';
 import Dashboard from './MyComponents/Dashboard';
+import { render } from '@testing-library/react';
 
 
 
 function App() {
+ 
   return (
     <>
-      <Router>
+    <Navbar/>
+    <Route exact path="/" component={Home}/>
+    <Route exact path="/about" component={About}/>
+    <Route exact path="services/" component={Services}/>
+    <Route exact path="/contact" component={Contact}/>
+    <Route exact path="/login" component={Login}/>
+    <Route exact path="/register" component={Register}/>
+    <Route exact path="/dashboard" component={Dashboard}/>
+    <Footer/>
+      {/* <Router>
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -49,7 +60,7 @@ function App() {
         </Switch>
         <Home/>
         <Footer />
-      </Router>
+      </Router> */}
     </>
 
   );
