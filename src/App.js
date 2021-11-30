@@ -22,7 +22,7 @@ import Dashboard from './MyComponents/Dashboard';
 function App() {
   return (
     <>
-      <BrowserRouter baseUrl="/reactlivewebsite">
+      <BrowserRouter>
         <Navbar />
         <Switch>
           <Route exact path="/">
@@ -47,7 +47,7 @@ function App() {
             <Dashboard />
           </Route>
         </Switch>
-         
+         <Home/>
         <Footer />
       </BrowserRouter>
     </>
