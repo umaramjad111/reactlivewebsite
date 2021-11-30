@@ -49,7 +49,9 @@ function App() {
         </Route>
       </Switch>
       <Home/> 
+      <About/>
       <Footer/>
+      
       </Router>
         </>
 
