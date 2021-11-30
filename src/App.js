@@ -4,11 +4,10 @@ import Navbar from './MyComponents/Navbar';
 import Home from './MyComponents/Home';
 
 import {
-  HashRouter,
+  BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  BrowserRouter,
+  Link
 } from "react-router-dom";
 import About from './MyComponents/About';
 import Services from './MyComponents/Services';
@@ -23,10 +22,9 @@ import Dashboard from './MyComponents/Dashboard';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router>
         <Navbar />
         <Switch>
-         <Route exact path="/reactlivewebsite" component={App}/> 
           <Route exact path="/">
             <Home />
           </Route>
@@ -50,7 +48,7 @@ function App() {
           </Route>
         </Switch>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </>
 
   );
